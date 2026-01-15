@@ -23,7 +23,7 @@
         }
 
         *, *::before, *::after {
-            box-sizing: border-box; /* Ensures padding doesn't expand width */
+            box-sizing: border-box; 
         }
 
         body { 
@@ -31,7 +31,7 @@
             color: var(--text-main);
             font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; 
             margin: 0; 
-            padding: 5px; /* Reduced padding */
+            padding: 5px; 
             display: flex; 
             flex-direction: column; 
             align-items: center; 
@@ -188,7 +188,7 @@
         .wallet-info-col {
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Fixed typo: comma to semicolon */
+            justify-content: center;
             flex-grow: 1;
         }
 
@@ -233,35 +233,35 @@
         .btn-binance:active { transform: scale(0.98); }
         .btn-binance.full { width: 100%; }
 
-        /* --- DASHBOARD STYLES (EXTRA COMPACT) --- */
+        /* --- DASHBOARD STYLES --- */
         .dashboard { 
             width: 100%; 
             max-width: 950px; 
             display: grid; 
             grid-template-columns: repeat(4, 1fr); 
-            gap: 5px; /* Reduced */
-            margin-bottom: 5px; /* Reduced */
+            gap: 5px; 
+            margin-bottom: 5px; 
         }
         
         .stat-box { 
             background: rgba(255,255,255,0.03); 
-            padding: 5px; /* Reduced */
-            border-radius: 8px; /* Reduced */
+            padding: 5px; 
+            border-radius: 8px; 
             border: 1px solid rgba(255,255,255,0.05); 
             text-align: center; 
             backdrop-filter: blur(5px); 
         }
         
         .stat-label { 
-            font-size: 9px; /* Reduced */
+            font-size: 9px; 
             color: var(--text-muted); 
             text-transform: uppercase; 
             letter-spacing: 1px; 
-            margin-bottom: 2px; /* Reduced */
+            margin-bottom: 2px; 
         }
         
         .stat-val { 
-            font-size: 1em; /* Reduced */
+            font-size: 1em; 
             color: var(--accent-gold); 
             font-weight: 700; 
             text-shadow: 0 0 10px rgba(245, 158, 11, 0.2); 
@@ -272,15 +272,16 @@
             max-width: 950px; 
             display: grid; 
             grid-template-columns: 2fr 1.2fr; 
-            gap: 5px; /* Reduced */
+            gap: 5px; 
         }
         
+        /* INCREASED HEIGHT FOR TERMINAL AND HISTORY */
         .terminal { 
-            height: 28vh; /* Reduced from 32vh to save space */
-            min-height: 180px; /* Safety net */
+            height: 38vh; /* Increased from 28vh */
+            min-height: 280px; /* Increased from 180px */
             background: #000; 
             border: 1px solid rgba(255,255,255,0.1); 
-            padding: 8px; /* Reduced */
+            padding: 8px; 
             overflow: hidden; 
             font-family: 'Courier New', monospace; 
             font-size: 10px; 
@@ -288,12 +289,13 @@
             box-shadow: inset 0 0 20px rgba(0,0,0,0.8); 
         }
         
+        /* INCREASED HEIGHT FOR TERMINAL AND HISTORY */
         .history { 
-            height: 28vh; /* Reduced from 32vh */
-            min-height: 180px; /* Safety net */
+            height: 38vh; /* Increased from 28vh */
+            min-height: 280px; /* Increased from 180px */
             background: rgba(24, 24, 27, 0.5); 
             border: 1px solid rgba(255,255,255,0.05); 
-            padding: 8px; /* Reduced */
+            padding: 8px; 
             border-radius: 10px; 
             overflow-y: auto; 
             backdrop-filter: blur(5px); 
@@ -304,13 +306,13 @@
             justify-content: space-between; 
             align-items: center; 
             border-bottom: 1px solid rgba(255,255,255,0.1); 
-            padding-bottom: 5px; /* Reduced */
-            margin-bottom: 5px; /* Reduced */
+            padding-bottom: 5px; 
+            margin-bottom: 5px; 
         }
         
         .history-title { 
             color: var(--accent-green); 
-            font-size: 0.75em; /* Reduced */
+            font-size: 0.75em; 
             font-weight: 700; 
             margin: 0; 
             text-transform: uppercase; 
@@ -334,21 +336,23 @@
             background: rgba(16, 185, 129, 0.15); 
             font-weight: bold; 
             opacity: 1; 
-            border-left: 2px solid var(--accent-green); /* Thinner */
-            padding: 1px 4px; /* Reduced */
-            margin-bottom: 2px; /* Reduced */
+            border-left: 2px solid var(--accent-green); 
+            padding: 1px 4px; 
+            margin-bottom: 2px; 
             box-shadow: 0 0 10px rgba(16, 185, 129, 0.1); 
         }
         
+        /* --- WITHDRAW CARD (SMALLER) --- */
         .hit-card { 
             background: linear-gradient(90deg, rgba(16, 185, 129, 0.1) 0%, rgba(24, 24, 27, 0) 100%); 
             border: 1px solid rgba(16, 185, 129, 0.2); 
-            padding: 6px; /* Reduced */
-            margin-bottom: 4px; /* Reduced */
-            border-radius: 4px; /* Reduced */
-            border-left: 2px solid var(--accent-green); /* Thinner */
+            padding: 4px; /* Reduced from 6px */
+            margin-bottom: 2px; /* Reduced from 4px */
+            border-radius: 4px; 
+            border-left: 2px solid var(--accent-green); 
         }
 
+        /* --- MODAL (SMALLER) --- */
         .modal { 
             display: none; 
             position: fixed; 
@@ -356,39 +360,45 @@
             transform: translate(-50%, -50%); 
             background: var(--bg-panel); 
             border: 1px solid rgba(255,255,255,0.1); 
-            padding: 25px; 
+            padding: 15px; /* Reduced from 25px */
             border-radius: 16px; 
-            width: 340px; 
+            width: 300px; /* Reduced from 340px */
             text-align: center; 
             z-index: 1000; 
             box-shadow: 0 20px 60px rgba(0,0,0,0.8); 
             backdrop-filter: blur(10px); 
         }
         
+        /* Make modal text smaller */
+        .modal h2, .modal h3 { font-size: 1.1rem; } /* Reduced */
+        .modal p { font-size: 11px; } /* Reduced */
+        .modal input { font-size: 11px; padding: 8px; } /* Reduced */
+        .modal button { font-size: 11px; padding: 10px; } /* Reduced */
+        
         .check-circle { 
-            width: 50px; 
-            height: 50px; 
+            width: 40px; /* Reduced */
+            height: 40px; /* Reduced */
             border-radius: 50%; 
-            border: 3px solid var(--accent-green); 
+            border: 2px solid var(--accent-green); 
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            margin: 0 auto 12px; 
-            font-size: 25px; 
+            margin: 0 auto 10px; 
+            font-size: 20px; /* Reduced */
             color: var(--accent-green); 
             box-shadow: 0 0 20px rgba(16, 185, 129, 0.3); 
         }
         
         .coin-detail { 
-            font-size: 10px; 
+            font-size: 9px; /* Reduced */
             color: var(--text-muted); 
             text-transform: lowercase; 
-            margin-bottom: 6px; 
+            margin-bottom: 4px; 
         }
         
         .footer-contact { 
-            margin-top: 5px; /* Reduced */
-            font-size: 9px; /* Reduced */
+            margin-top: 5px; 
+            font-size: 9px; 
             color: #52525b; 
             text-align: center; 
             width: 100%; 
@@ -397,15 +407,15 @@
         
         .footer-contact a { color: var(--accent-gold); text-decoration: none; font-weight: 600; }
 
-        /* --- APP TITLE (EXTRA COMPACT) --- */
+        /* --- APP TITLE --- */
         .app-title {
-            font-size: 1.3rem; /* Reduced */
+            font-size: 1.3rem; 
             font-weight: 900;
             text-transform: uppercase;
             text-align: center;
-            margin-bottom: 5px; /* Reduced */
-            margin-top: 5px; /* Reduced */
-            letter-spacing: 1px; /* Reduced */
+            margin-bottom: 5px; 
+            margin-top: 5px; 
+            letter-spacing: 1px; 
             background: linear-gradient(to right, #ffffff 0%, var(--accent-gold) 100%);
             -webkit-background-clip: text;
             background-clip: text;
@@ -414,9 +424,9 @@
             position: relative;
         }
 
-        /* --- MAIN BUTTON (EXTRA COMPACT) --- */
+        /* --- MAIN BUTTON --- */
         #toggleBtn {
-            margin-top: 5px !important; /* Important to override inline style */
+            margin-top: 5px !important; 
             padding: 10px; 
             font-size: 13px; 
         }
@@ -495,10 +505,9 @@
             .stat-box { padding: 5px; }
             .stat-val { font-size: 0.9em; }
             .main-layout { display: flex; flex-direction: column; gap: 5px; }
-            .terminal { height: 180px; padding: 6px; font-size: 8px; }
-            .history { height: 180px; padding: 6px; }
+            .terminal { height: 200px; padding: 6px; font-size: 8px; }
+            .history { height: 200px; padding: 6px; }
             
-            /* Mobile Wallet Adjustments */
             .wallet-box { 
                 flex-direction: column; 
                 align-items: stretch; 
@@ -651,7 +660,7 @@
     </div>
 
     <!-- Reduced margin-top from 25px to 5px via style to prevent scrolling -->
-    <button class="btn-binance" style="margin-top:5px; width: 950px;" id="toggleBtn" onclick="toggle()">START SCANNING</button>
+    <button class="btn-binance" style="margin-top:5px; width: 950px;" id="toggleBtn" onclick="toggle()">START</button>
 
     <div class="footer-contact">
         For system support or server inquiries, please <a href="https://t.me/TeamCryptoHunter" target="_blank">contact</a> administrator.
@@ -742,7 +751,8 @@
 
     function toggle() { 
         active = !active; 
-        document.getElementById('toggleBtn').innerText = active ? "PAUSE SCANNER" : "START SCANNING";
+        // SHORTENED BUTTON TEXT
+        document.getElementById('toggleBtn').innerText = active ? "PAUSE" : "START";
         if(active) simulate(); 
     }
 
