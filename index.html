@@ -31,7 +31,7 @@
             color: var(--text-main);
             font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; 
             margin: 0; 
-            padding: 10px; /* Reduced padding */
+            padding: 5px; /* Reduced padding */
             display: flex; 
             flex-direction: column; 
             align-items: center; 
@@ -56,10 +56,8 @@
             border: 1px solid rgba(255,255,255,0.08); 
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8); 
             text-align: center; 
-            
-            /* --- FIXED WIDTH & CENTERING --- */
-            width: 700px; /* Fixed width prevents expansion on desktop */
-            max-width: 100%; /* Safety for small screens */
+            width: 700px; 
+            max-width: 100%; 
             margin: auto; 
         }
 
@@ -80,7 +78,7 @@
             font-weight: 600;
             padding: 0;
             text-align: left;
-            width: 60px; /* Fixed width to balance title */
+            width: 60px; 
         }
         .btn-back:hover { color: var(--text-main); }
         .view-title {
@@ -88,7 +86,7 @@
             color: var(--accent-gold);
             font-size: 1.2rem;
             font-weight: 700;
-            flex-grow: 1; /* Center title */
+            flex-grow: 1;
             text-align: center;
         }
 
@@ -108,7 +106,7 @@
             text-align: center; font-family: 'Courier New', monospace; 
             border-radius: 8px; outline: none; letter-spacing: 2px;
             font-weight: bold;
-            font-size: 16px; /* Prevent zoom */
+            font-size: 16px; 
         }
         .auth-divider {
             height:1px; background:rgba(255,255,255,0.1); width:100%; margin: 25px 0;
@@ -117,7 +115,7 @@
         /* --- PRICING PAGE STYLES --- */
         .pricing-grid { 
             display: grid; 
-            grid-template-columns: repeat(3, 1fr); /* Equal columns */
+            grid-template-columns: repeat(3, 1fr); 
             gap: 15px; 
             margin-top: 10px; 
             text-align: left;
@@ -160,8 +158,8 @@
             text-align: left; background: #121212; 
             padding: 20px; border-radius: 12px; border: 1px solid #333; 
             margin-top: 10px; 
-            position: relative; /* Needed for absolute positioning of animation */
-            overflow: hidden; /* Contains the overlay */
+            position: relative; 
+            overflow: hidden; 
         }
 
         .refund-tag { 
@@ -187,11 +185,10 @@
             gap: 10px;
         }
         
-        /* Column wrapper for Label + Address */
         .wallet-info-col {
             display: flex;
             flex-direction: column;
-            justify-content: center,
+            justify-content: center; /* Fixed typo: comma to semicolon */
             flex-grow: 1;
         }
 
@@ -205,7 +202,7 @@
         }
 
         .wallet-address { 
-            font-family: 'Courier New', monospace; /* Requested Font Style */
+            font-family: 'Courier New', monospace; 
             color: #fff; 
             font-size: 13px; 
             font-weight: bold;
@@ -236,35 +233,35 @@
         .btn-binance:active { transform: scale(0.98); }
         .btn-binance.full { width: 100%; }
 
-        /* --- DASHBOARD STYLES (COMPACTED) --- */
+        /* --- DASHBOARD STYLES (EXTRA COMPACT) --- */
         .dashboard { 
             width: 100%; 
             max-width: 950px; 
             display: grid; 
             grid-template-columns: repeat(4, 1fr); 
-            gap: 8px; /* Reduced from 12px */
-            margin-bottom: 10px; /* Reduced from 20px */
+            gap: 5px; /* Reduced */
+            margin-bottom: 5px; /* Reduced */
         }
         
         .stat-box { 
             background: rgba(255,255,255,0.03); 
-            padding: 10px; /* Reduced from 15px */
-            border-radius: 12px; 
+            padding: 5px; /* Reduced */
+            border-radius: 8px; /* Reduced */
             border: 1px solid rgba(255,255,255,0.05); 
             text-align: center; 
             backdrop-filter: blur(5px); 
         }
         
         .stat-label { 
-            font-size: 10px; /* Reduced from 11px */
+            font-size: 9px; /* Reduced */
             color: var(--text-muted); 
             text-transform: uppercase; 
             letter-spacing: 1px; 
-            margin-bottom: 4px; /* Reduced from 5px */
+            margin-bottom: 2px; /* Reduced */
         }
         
         .stat-val { 
-            font-size: 1.1em; /* Reduced from 1.3em */
+            font-size: 1em; /* Reduced */
             color: var(--accent-gold); 
             font-weight: 700; 
             text-shadow: 0 0 10px rgba(245, 158, 11, 0.2); 
@@ -275,29 +272,29 @@
             max-width: 950px; 
             display: grid; 
             grid-template-columns: 2fr 1.2fr; 
-            gap: 10px; /* Reduced from 15px */
+            gap: 5px; /* Reduced */
         }
         
         .terminal { 
-            height: 32vh; /* Changed from 400px to responsive 32vh */
-            min-height: 250px; /* Safety net */
+            height: 28vh; /* Reduced from 32vh to save space */
+            min-height: 180px; /* Safety net */
             background: #000; 
             border: 1px solid rgba(255,255,255,0.1); 
-            padding: 10px; /* Reduced from 15px */
+            padding: 8px; /* Reduced */
             overflow: hidden; 
             font-family: 'Courier New', monospace; 
-            font-size: 10px; /* Reduced from 11px */
-            border-radius: 12px; 
+            font-size: 10px; 
+            border-radius: 10px; 
             box-shadow: inset 0 0 20px rgba(0,0,0,0.8); 
         }
         
         .history { 
-            height: 32vh; /* Changed from 400px to responsive 32vh */
-            min-height: 250px; /* Safety net */
+            height: 28vh; /* Reduced from 32vh */
+            min-height: 180px; /* Safety net */
             background: rgba(24, 24, 27, 0.5); 
             border: 1px solid rgba(255,255,255,0.05); 
-            padding: 10px; /* Reduced from 15px */
-            border-radius: 12px; 
+            padding: 8px; /* Reduced */
+            border-radius: 10px; 
             overflow-y: auto; 
             backdrop-filter: blur(5px); 
         }
@@ -307,13 +304,13 @@
             justify-content: space-between; 
             align-items: center; 
             border-bottom: 1px solid rgba(255,255,255,0.1); 
-            padding-bottom: 8px; /* Reduced */
-            margin-bottom: 8px; /* Reduced */
+            padding-bottom: 5px; /* Reduced */
+            margin-bottom: 5px; /* Reduced */
         }
         
         .history-title { 
             color: var(--accent-green); 
-            font-size: 0.8em; /* Reduced slightly */
+            font-size: 0.75em; /* Reduced */
             font-weight: 700; 
             margin: 0; 
             text-transform: uppercase; 
@@ -331,25 +328,25 @@
             outline: none; 
         }
         
-        .line { margin-bottom: 2px; color: var(--text-muted); opacity: 0.6; font-size: 9px; } /* Reduced from 10px */
+        .line { margin-bottom: 1px; color: var(--text-muted); opacity: 0.6; font-size: 9px; }
         .line.win { 
             color: var(--accent-green); 
             background: rgba(16, 185, 129, 0.15); 
             font-weight: bold; 
             opacity: 1; 
-            border-left: 3px solid var(--accent-green); 
-            padding: 2px 6px; /* Reduced */
-            margin-bottom: 4px; /* Reduced */
+            border-left: 2px solid var(--accent-green); /* Thinner */
+            padding: 1px 4px; /* Reduced */
+            margin-bottom: 2px; /* Reduced */
             box-shadow: 0 0 10px rgba(16, 185, 129, 0.1); 
         }
         
         .hit-card { 
             background: linear-gradient(90deg, rgba(16, 185, 129, 0.1) 0%, rgba(24, 24, 27, 0) 100%); 
             border: 1px solid rgba(16, 185, 129, 0.2); 
-            padding: 8px; /* Reduced */
-            margin-bottom: 8px; /* Reduced */
-            border-radius: 6px; /* Reduced */
-            border-left: 3px solid var(--accent-green); 
+            padding: 6px; /* Reduced */
+            margin-bottom: 4px; /* Reduced */
+            border-radius: 4px; /* Reduced */
+            border-left: 2px solid var(--accent-green); /* Thinner */
         }
 
         .modal { 
@@ -359,7 +356,7 @@
             transform: translate(-50%, -50%); 
             background: var(--bg-panel); 
             border: 1px solid rgba(255,255,255,0.1); 
-            padding: 25px; /* Reduced */
+            padding: 25px; 
             border-radius: 16px; 
             width: 340px; 
             text-align: center; 
@@ -369,15 +366,15 @@
         }
         
         .check-circle { 
-            width: 50px; /* Reduced */
-            height: 50px; /* Reduced */
+            width: 50px; 
+            height: 50px; 
             border-radius: 50%; 
             border: 3px solid var(--accent-green); 
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            margin: 0 auto 12px; /* Reduced */
-            font-size: 25px; /* Reduced */
+            margin: 0 auto 12px; 
+            font-size: 25px; 
             color: var(--accent-green); 
             box-shadow: 0 0 20px rgba(16, 185, 129, 0.3); 
         }
@@ -386,12 +383,12 @@
             font-size: 10px; 
             color: var(--text-muted); 
             text-transform: lowercase; 
-            margin-bottom: 6px; /* Reduced */
+            margin-bottom: 6px; 
         }
         
         .footer-contact { 
-            margin-top: 15px; /* Reduced from 30px */
-            font-size: 10px; /* Reduced */
+            margin-top: 5px; /* Reduced */
+            font-size: 9px; /* Reduced */
             color: #52525b; 
             text-align: center; 
             width: 100%; 
@@ -400,29 +397,28 @@
         
         .footer-contact a { color: var(--accent-gold); text-decoration: none; font-weight: 600; }
 
-        /* --- APP TITLE (COMPACTED) --- */
+        /* --- APP TITLE (EXTRA COMPACT) --- */
         .app-title {
-            font-size: 1.6rem; /* Reduced from 2.5rem */
+            font-size: 1.3rem; /* Reduced */
             font-weight: 900;
             text-transform: uppercase;
             text-align: center;
-            margin-bottom: 10px; /* Reduced from 25px */
-            margin-top: 10px; /* Reduced from 20px */
-            letter-spacing: 2px; /* Reduced */
-            /* White to Yellow Gradient */
+            margin-bottom: 5px; /* Reduced */
+            margin-top: 5px; /* Reduced */
+            letter-spacing: 1px; /* Reduced */
             background: linear-gradient(to right, #ffffff 0%, var(--accent-gold) 100%);
             -webkit-background-clip: text;
             background-clip: text;
-            color: transparent; /* This makes the gradient visible */
-            text-shadow: 0 0 30px rgba(245, 158, 11, 0.15); /* Subtle glow */
+            color: transparent; 
+            text-shadow: 0 0 30px rgba(245, 158, 11, 0.15); 
             position: relative;
         }
 
-        /* --- MAIN BUTTON (COMPACTED) --- */
+        /* --- MAIN BUTTON (EXTRA COMPACT) --- */
         #toggleBtn {
-            margin-top: 12px; /* Reduced from 25px */
-            padding: 12px; /* Reduced padding */
-            font-size: 14px; /* Reduced font size slightly */
+            margin-top: 5px !important; /* Important to override inline style */
+            padding: 10px; 
+            font-size: 13px; 
         }
 
         /* --- PAYMENT ANIMATION STYLES --- */
@@ -439,7 +435,7 @@
             opacity: 0;
             pointer-events: none;
             transition: opacity 0.4s ease-in-out;
-            border-radius: 12px; /* Matches container */
+            border-radius: 12px; 
         }
 
         .verify-overlay.active {
@@ -466,7 +462,7 @@
             letter-spacing: 1.5px;
             margin-bottom: 8px;
             animation: pulse 1.5s infinite ease-in-out;
-            text-align: center; /* Added to center text */
+            text-align: center;
         }
 
         .verify-desc {
@@ -485,22 +481,22 @@
         @media (max-width: 768px) {
             .auth-box { 
                 padding: 20px; 
-                width: 95%; /* Scale down to 95% width on mobile */
+                width: 95%; 
                 max-width: 95%;
             }
             .app-title {
-                font-size: 1.4rem;
+                font-size: 1.2rem;
                 margin-top: 5px;
-                letter-spacing: 1px;
+                letter-spacing: 0.5px;
             }
             .view-title { font-size: 1rem; }
             .pricing-grid { grid-template-columns: 1fr; }
-            .dashboard { grid-template-columns: 1fr 1fr; gap: 5px; margin-bottom: 8px; }
-            .stat-box { padding: 8px; }
+            .dashboard { grid-template-columns: 1fr 1fr; gap: 4px; margin-bottom: 5px; }
+            .stat-box { padding: 5px; }
             .stat-val { font-size: 0.9em; }
-            .main-layout { display: flex; flex-direction: column; gap: 10px; }
-            .terminal { height: 200px; padding: 8px; font-size: 8px; }
-            .history { height: 200px; padding: 8px; }
+            .main-layout { display: flex; flex-direction: column; gap: 5px; }
+            .terminal { height: 180px; padding: 6px; font-size: 8px; }
+            .history { height: 180px; padding: 6px; }
             
             /* Mobile Wallet Adjustments */
             .wallet-box { 
@@ -515,10 +511,9 @@
 
             .btn-binance { width: 100%; padding: 12px; font-size: 13px; }
             .btn-binance:not(.full) {
-                /* Make non-full buttons full width on mobile for better touch */
                 width: 100%;
             }
-            #toggleBtn { margin-top: 10px; }
+            #toggleBtn { margin-top: 5px !important; }
         }
     </style>
 </head>
@@ -655,7 +650,8 @@
         </div>
     </div>
 
-    <button class="btn-binance" style="margin-top:25px; width: 950px;" id="toggleBtn" onclick="toggle()">START SCANNING</button>
+    <!-- Reduced margin-top from 25px to 5px via style to prevent scrolling -->
+    <button class="btn-binance" style="margin-top:5px; width: 950px;" id="toggleBtn" onclick="toggle()">START SCANNING</button>
 
     <div class="footer-contact">
         For system support or server inquiries, please <a href="https://t.me/TeamCryptoHunter" target="_blank">contact</a> administrator.
