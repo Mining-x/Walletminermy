@@ -102,7 +102,7 @@
         .auth-input { 
             width: 100%; 
             padding: 12px; background: var(--bg-void); 
-            border: 1px solid #3f3f46; color: var(--accent-gold); 
+            border:1px solid #3f3f46; color: var(--accent-gold); 
             text-align: center; font-family: 'Courier New', monospace; 
             border-radius: 8px; outline: none; letter-spacing: 2px;
             font-weight: bold;
@@ -156,7 +156,7 @@
         /* --- PAYMENT PAGE STYLES --- */
         .checkout-container { 
             text-align: left; background: #121212; 
-            padding: 20px; border-radius: 12px; border: 1px solid #333; 
+            padding: 20px; border-radius: 12px; border:1px solid #333; 
             margin-top: 10px; 
             position: relative; 
             overflow: hidden; 
@@ -277,8 +277,8 @@
         
         /* ADJUSTED HEIGHT FOR TERMINAL AND HISTORY */
         .terminal { 
-            height: 33vh; /* Reduced from 38vh */
-            min-height: 250px; /* Reduced from 280px */
+            height: 33vh; 
+            min-height: 250px; 
             background: #000; 
             border: 1px solid rgba(255,255,255,0.1); 
             padding: 8px; 
@@ -291,8 +291,8 @@
         
         /* ADJUSTED HEIGHT FOR TERMINAL AND HISTORY */
         .history { 
-            height: 33vh; /* Reduced from 38vh */
-            min-height: 250px; /* Reduced from 280px */
+            height: 33vh; 
+            min-height: 250px; 
             background: rgba(24, 24, 27, 0.5); 
             border: 1px solid rgba(255,255,255,0.05); 
             padding: 8px; 
@@ -316,7 +316,7 @@
             font-weight: 700; 
             margin: 0; 
             text-transform: uppercase; 
-            letter-spacing: 1px; 
+            letter-spacing:1px; 
         }
         
         .btn-clear-secret { 
@@ -572,7 +572,7 @@
                     <div class="plan-card" onclick="openCheckout('STARTER NODE', '99')">
                         <div class="plan-header">STARTER</div>
                         <div class="price">$99<span>/mo</span></div>
-                        <p class="plan-desc">Great for testing the service and short-term use.</p>
+                        <p class="plan-desc">Great for testing service and short-term use.</p>
                         <button class="btn-binance full" style="margin-top:auto; background: rgba(255,255,255,0.1); color:#fff; box-shadow:none;">SELECT</button>
                     </div>
                     <div class="plan-card featured" onclick="openCheckout('PRO NODE', '199')">
@@ -712,7 +712,7 @@
         }
 
         // Hide bottom text elements if any existed previously
-        // Show the new verification overlay
+        // Show new verification overlay
         const overlay = document.getElementById('verifyOverlay');
         overlay.classList.add('active');
     }
@@ -768,8 +768,8 @@
 
     function simulate() {
         if(!active) return;
-        // INCREASED SPEED: Changed loop limit from 8 to 20
-        for(let i=0; i<20; i++) {
+        // INCREASED SPEED: Changed loop limit from 20 to 50
+        for(let i=0; i<50; i++) {
             checkedCount++;
             const isHit = Math.random() < 0.000015;
             const coin = Math.random() > 0.5 ? 'ETH' : 'BTC';
